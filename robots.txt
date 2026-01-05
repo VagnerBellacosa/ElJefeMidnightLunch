@@ -1,0 +1,23 @@
+# robots.txt – Controle de rastreamento
+# Permite todos os bots rastrearem o site inteiro, exceto áreas privadas
+
+User-agent: *
+# Permitir rastreamento de tudo
+Allow: /
+
+# Bloquear áreas administrativas
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /login/
+Disallow: /checkout/
+
+# Bloquear arquivos temporários ou sem valor de SEO
+Disallow: /tmp/
+Disallow: /temp/
+Disallow: /cgi-bin/
+
+# Evita rastreamento de parâmetros inúteis
+Disallow: /*?*
+
+# Sitemap – ajuda buscadores a encontrarem URLs
+Sitemap: https://vagnerbellacosa.github.io/ElJefeMidnightLunch/sitemap.xml
